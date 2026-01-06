@@ -4,19 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Wordle Practice</title>
 </head>
 
 <body>
-    <header>
+    <header class="topbar">
+        <div class="title">Wordle Practice</div>
+        <div class="controls">
+            <div id="score">0/6</div>
+            <label class="theme-switch">
+                <input type="checkbox" id="theme-toggle">
+                <span>Dark</span>
+            </label>
+            <button id="new-word">New Word</button>
+        </div>
     </header>
     
     <main>
+        <section id="board" aria-label="Wordle board"></section>
+        <div id="keyboard" class="keyboard" aria-label="On-screen keyboard"></div>
     </main>
     
     <footer>
+        <p>Practice Wordle — 6 guesses, 5-letter words.</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
